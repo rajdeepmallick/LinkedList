@@ -48,6 +48,11 @@ struct Node {
   }
 }; */
 // function inserts the data in front of the list
+
+
+
+
+//my code
 Node *insertAtBegining(Node *head, int newData) {
     Node *temp=new Node(newData);
     if(head==NULL)
