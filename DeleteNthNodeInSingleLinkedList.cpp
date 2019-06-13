@@ -6,6 +6,11 @@ struct Node
     Node* next;
 };*/
 /*You are required to complete below method*/
+
+
+
+
+//my code
 Node* deleteNode(Node *head,int x){
     Node *p=head;
     
