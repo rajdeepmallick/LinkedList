@@ -5,6 +5,10 @@ struct Node {
     struct Node* next;
 }; */
 
+
+
+
+//my code
 Node* pushnode(Node *head,int key){
     Node *temp=new Node;
     temp->val=key;
@@ -34,3 +38,23 @@ void intersection(Node **head1, Node **head2,Node **head3){
         q=q->next;    
     }
 }
+
+
+/*
+//this is working
+void intersection(Node **head1, Node **head2,Node **head3){
+    Node *p=*head1,*q=*head2;
+    while(p!=NULL && q!=NULL){
+        if(p->val==q->val){
+            *head3=pushnode(*head3,p->val);
+            p=p->next;
+            q=q->next;
+        }
+        else if(p->val<q->val)
+            p=p->next;
+        else if(p->val>q->val)
+            q=q->next;
+    }
+}
+
+*/
